@@ -15,7 +15,6 @@ export default class Container extends Component {
                 <Cube size={60} duration={8} />
                 <Cube size={80} duration={5} />
                 <Cube size={40} duration={14} />
-
             </div>
 
         );
