@@ -5,7 +5,8 @@ body {
   perspective-origin center -3 * $cubeSize;
 }
 
-.container {
-  padding 100px
-  text-align center
+.container:before {
+  content: '';
+  display: inline-block;
+  height: $cubeSize;
 }
