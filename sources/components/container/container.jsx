@@ -8,7 +8,6 @@ import './container.styl';
 export default class Container extends Component {
 
     render() {
-
         return (
             <div className="container">
                 <Cube faces={FACES_OPTIONS} />

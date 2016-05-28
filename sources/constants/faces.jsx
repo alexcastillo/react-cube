@@ -1,21 +1,29 @@
+const HALF_SIZE = 200 / 2;
+
 const faces = [
     {
-        background: 'red'
+        background: 'red',
+        transform: `translateZ(-${HALF_SIZE}px)`
     },
     {
-        background: 'yellow'
+        background: 'yellow',
+        transform: `translateX(-${HALF_SIZE}px) rotateY(90deg)`
     },
     {
-        background: 'green'
+        background: 'green',
+        transform: `translateX(${HALF_SIZE}px) rotateY(90deg)`
     },
     {
-        background: 'blue'
+        background: 'blue',
+        transform: `translateY(-${HALF_SIZE}px) rotateX(90deg)`
     },
     {
-        background: 'black'
+        background: 'black',
+        transform: `translateY(${HALF_SIZE}px) rotateX(90deg)`
     },
     {
-        background: 'purple'
+        background: 'purple',
+        transform: `translateZ(${HALF_SIZE}px)`
     }
 ];
 
