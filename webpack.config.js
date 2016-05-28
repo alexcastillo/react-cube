@@ -1,9 +1,10 @@
 module.exports = {
-    entry: "./main.jsx",
+    entry: "./sources/index.jsx",
     output: {
-        path: __dirname + '/src/bundle',
-        filename: "script.bundle.js"
+        path: __dirname + '/build/scripts',
+        filename: "cube.bundle.js"
     },
+    devtool: 'source-map',
     module: {
         loaders: [{
             test: /\.jsx?$/,

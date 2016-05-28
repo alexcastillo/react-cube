@@ -1,7 +1,5 @@
 # Logs
 logs
-*.log
-npm-debug.log*
 
 # Dependency directory
 node_modules
@@ -9,7 +7,9 @@ node_modules
 # Optional npm cache directory
 .npm
 
-#idea
+# Idea files
 .idea
 
+# Build
 *.bundle.js
+*.map

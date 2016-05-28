@@ -1,8 +1,7 @@
 {
-  "name": "proj",
+  "name": "react-cube",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "React cube",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
