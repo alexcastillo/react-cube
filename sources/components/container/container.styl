@@ -1,12 +1,13 @@
-@import '../../constants/constants.styl'
+
+//FIXME: MAGIC NUMBERS
 
 body {
-  perspective  10 * $cubeSize
-  perspective-origin center -3 * $cubeSize;
+  perspective  2000px
+  perspective-origin center -3 * 200px
 }
 
 .container:before {
   content: '';
   display: inline-block;
-  height: $cubeSize;
+  height: 200px;
 }

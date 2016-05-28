@@ -8,11 +8,13 @@ export default class Face extends Component {
     render() {
         const style = {
             background: this.props.background,
-            transform: this.props.transform
+            transform: this.props.transform,
+            width: this.props.width,
+            height: this.props.height
         };
 
         return (
-            <div className="face" style={ style } ></div>
+            <div className="face" style={ style }></div>
         );
     }
 }
