@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 
 import Face from '../face/face.jsx';
-import { getStylesForFaces } from '../helpers/faces.jsx';
+import { getStylesForFaces } from '../../helpers/faces.jsx';
 import './cube.styl';
 
 export default class Cube extends Component {
