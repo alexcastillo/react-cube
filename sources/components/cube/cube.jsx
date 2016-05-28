@@ -5,7 +5,13 @@ import Face from '../face/face.jsx';
 export default class Cube extends Component {
     render() {
         return (
-            <Face background='red'/>
+            <div>
+                {
+                    this.props.faces.map((face, index) => {
+                        return <Face background={face.background} key={index}/>
+                    })
+                }
+            </div>
         );
     }
 }
