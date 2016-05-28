@@ -1,7 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
-import randomColor from 'randomcolor';
 
+import randomColor from 'randomcolor';
 import './face.styl';
 
 export default class Face extends Component {

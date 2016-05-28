@@ -7,14 +7,13 @@ import './container.styl';
 export default class Container extends Component {
 
     render() {
-        //TODO: COLORS
         return (
             <div className="container">
-                <Cube size={20} duration={10}/>
-                <Cube size={50} duration={8}/>
+                <Cube size={20} duration={10} />
+                <Cube size={50} duration={8} />
                 <Cube size={40} duration={20}/>
-                <Cube size={60} duration={8}/>
-                <Cube size={80} duration={5}/>
+                <Cube size={60} duration={8} />
+                <Cube size={80} duration={5} />
                 <Cube size={40} duration={14} />
 
             </div>
