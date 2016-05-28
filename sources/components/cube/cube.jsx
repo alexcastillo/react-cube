@@ -9,10 +9,10 @@ export default class Cube extends Component {
 
     render() {
         const faces = getStylesForFaces(this.props.size);
-
         const options = {
             width: `${this.props.size}px`,
-            height: `${this.props.size}px`
+            height: `${this.props.size}px`,
+            animation: `rotate ${this.props.duration}s infinite linear`
         };
 
         return (
