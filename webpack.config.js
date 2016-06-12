@@ -1,8 +1,10 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     entry: "./app/index.jsx",
     output: {
-        path: __dirname + '/dist/scripts',
-        filename: "cube.bundle.js"
+        path: __dirname + '/dist',
+        filename: "scripts/cube.bundle.js"
     },
     devtool: 'source-map',
     module: {
@@ -18,5 +20,9 @@ module.exports = {
             loader: 'style-loader!css-loader!stylus-loader'
         }]
     },
-    watch: true
+    watch: true,
+    //generate html template for application
+    plugins: [new HtmlWebpackPlugin({
+        title: 'React Cube'
+    })]
 };

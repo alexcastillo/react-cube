@@ -11,5 +11,4 @@ node_modules
 .idea
 
 # Build
-*.bundle.js
-*.map
+dist
