@@ -1,7 +1,7 @@
 module.exports = {
-    entry: "./sources/index.jsx",
+    entry: "./app/index.jsx",
     output: {
-        path: __dirname + '/build/scripts',
+        path: __dirname + '/dist/scripts',
         filename: "cube.bundle.js"
     },
     devtool: 'source-map',
