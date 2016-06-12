@@ -1,13 +1,13 @@
-
-//FIXME: MAGIC NUMBERS
+@import "../../constants/constants.styl"
 
 .container {
-  perspective  2000px
-  perspective-origin center -3 * 200px
+  perspective: $containerPerspective
+  perspective-origin: center $originPerspective
 }
 
+  //TODO: find better solution
 .container:before {
-  content: '';
-  display: inline-block;
-  height: 200px;
+  content: ''
+  display: inline-block
+  height: $defaultSpacer
 }
