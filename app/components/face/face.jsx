@@ -8,11 +8,17 @@ import './face.styl';
  * face of the cube ... TBC
  */
 
+
 export default class Face extends Component {
+
+    constructor(props) {
+        super(props);
+        this.color = randomColor();
+    }
 
     render() {
         const style = {
-            background: randomColor(),
+            background: this.color,
             transform: this.props.transform,
             width: this.props.width,
             height: this.props.height

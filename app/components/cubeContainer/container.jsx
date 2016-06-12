@@ -9,11 +9,34 @@ import './container.styl';
  */
 
 export default class Container extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            x: 50,
+            y: 50
+        }
+    }
+
+    incrementX() {
+        this.setState({
+            x: this.state.x + 10,
+            y: this.state.y
+        })
+    }
+
+    incrementY() {
+        this.setState({
+            x: this.state.x,
+            y: this.state.y + 10
+        })
+    }
 
     render() {
         return (
             <div className="container">
-                <Cube size={100} angleY={50} angleX={50}/>
+                <Cube size={100} angleY={this.state.x} angleX={this.state.y}/>
+                <button onClick={this.incrementX.bind(this)}>X</button>
+                <button onClick={this.incrementY.bind(this)}>Y</button>
             </div>
 
         );
