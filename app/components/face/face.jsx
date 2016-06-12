@@ -4,6 +4,10 @@ import { Component } from 'react';
 import randomColor from 'randomcolor';
 import './face.styl';
 
+/**
+ * face of the cube ... TBC
+ */
+
 export default class Face extends Component {
 
     render() {
