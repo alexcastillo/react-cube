@@ -5,10 +5,8 @@ import { Provider } from 'react-redux';
 import store from './store/store.jsx';
 
 render(
-  <div>
     <Provider store={store}>
       <Container />
-    </Provider>
-  </div>,
+    </Provider>,
   document.getElementById('react-main-app')
 );
