@@ -1,17 +1,14 @@
 import _ from 'lodash';
+import { combineReducers } from 'redux';
 
-const initialState = {
-	x: 50,
-    y: 50
-}
+import rotateReducer from './rotateReducer.jsx';
 
-export function reducer(state = initialState, action) {
-  switch (action.type) {
-  case 'INCREMENT_X':
-    return _.merge(state, { x: ++state.x });
-  case 'INCREMENT_Y':
-    return _.merge(state, { y: ++state.y });
-  default:
-    return state;
-  }
+const reducers = {
+    rotate: rotateReducer
+};
+
+export default function appReducer(state, action) {
+    return _.reduce(reducers, (state, reducer) => {
+        return reducer(state, action);
+    }, state);
 }

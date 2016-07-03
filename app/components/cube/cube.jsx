@@ -4,6 +4,7 @@ import _ from 'lodash';
 
 import Face from '../face/face.jsx';
 import { getTranslateStylesForFaces } from '../../helpers/faces.jsx';
+import randomColor from 'randomcolor';
 import './cube.styl';
 
 /**
@@ -31,7 +32,7 @@ export default class Cube extends Component {
             <div className='cube' style={_.merge(options, sharedOptions)}>
                 {
                     _.map(faces, (face, index) => {
-                        return <Face {...face} key={index} {...sharedOptions}/>
+                        return <Face {...face} key={index} {...sharedOptions} color={randomColor()}/>
                     })
                 }
             </div>

@@ -25,10 +25,6 @@ class Container extends Component {
     }
 }
 
-Container.propTypes = {
-  x: React.PropTypes.number,
-  y: React.PropTypes.number
-};
 
 const containerSelector = createSelector(
 [rotateX, rotateY],

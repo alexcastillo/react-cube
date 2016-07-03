@@ -1,4 +1,4 @@
-import { store } from '../store/store.jsx';
+import store from '../store/store.jsx';
 
 export function incrementY() {
 	store.dispatch({ type: 'INCREMENT_Y' });
