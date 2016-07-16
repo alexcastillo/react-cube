@@ -19,14 +19,14 @@ export default class Cube extends Component {
 
     render() {
         const faces = getTranslateStylesForFaces(this.props.size);
-
+        const { angleX = 0, angleY = 0, angleZ = 0 } = this.props;
         const sharedOptions = {
             width: `${this.props.size}px`,
             height: `${this.props.size}px`
         };
 
         const options = {
-            transform: `rotateY(${this.props.angleY || 0}deg) rotateX(${this.props.angleX || 0}deg)`
+            transform: `rotateY(${angleY}deg) rotateX(${angleX}deg) rotateZ(${angleZ}deg)`
         };
 
         return (

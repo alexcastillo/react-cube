@@ -7,3 +7,7 @@ export function rotateX(appState) {
 export function rotateY(appState) {
     return _.get(appState, 'y');
 }
+
+export function rotateZ(appState) {
+    return _.get(appState, 'z');
+}

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import Cube from '../cube/cube.jsx';
 import * as RotateActions from '../../actions/rotate.jsx';
-import { rotateX, rotateY } from '../../selectors/coordinates.jsx';
+import { rotateX, rotateY, rotateZ } from '../../selectors/coordinates.jsx';
 import './container.styl';
 
 /**
@@ -16,9 +16,10 @@ class Container extends Component {
     render() {
         return (
             <div className="container">
-                <Cube size={100} angleY={this.props.y} angleX={this.props.x}/>
+                <Cube size={100} {...this.props}/>
                 <button onClick={RotateActions.incrementX}>X</button>
                 <button onClick={RotateActions.incrementY}>Y</button>
+                <button onClick={RotateActions.incrementZ}>Z</button>
             </div>
 
         );
@@ -27,11 +28,12 @@ class Container extends Component {
 
 
 const containerSelector = createSelector(
-[rotateX, rotateY],
-(rotateX, rotateY) => {
+[rotateX, rotateY, rotateZ],
+(rotateX, rotateY, rotateZ) => {
     return {
-        x: rotateX,
-        y: rotateY
+        angleX: rotateX,
+        angleY: rotateY,
+        angleZ: rotateZ
     };
 });
 
