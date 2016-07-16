@@ -10,3 +10,5 @@ render(
     </Provider>,
   document.getElementById('react-main-app')
 );
+
+window.store = store;

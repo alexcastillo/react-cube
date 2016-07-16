@@ -8,9 +8,15 @@ const initialState = {
 export default function reducer(state = initialState, action) {
     switch (action.type) {
         case 'INCREMENT_X':
-            return _.merge(state, { x: ++state.x });
+            return {
+                x: ++state.x,
+                y: state.y
+            };
         case 'INCREMENT_Y':
-            return _.merge(state, { y: ++state.y });
+            return {
+                x: state.x,
+                y: ++state.y
+            };
         default:
             return state;
     }
