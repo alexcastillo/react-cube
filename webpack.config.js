@@ -24,6 +24,6 @@ module.exports = {
     //generate html template for application
     plugins: [new HtmlWebpackPlugin({
         title: 'React Cube',
-        template: './app/indexTemplate.ejs'
+        template: './app/index.template.ejs'
     })]
 };
