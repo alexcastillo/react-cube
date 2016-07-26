@@ -1,14 +1,12 @@
 @import "../../constants/constants.styl"
 
-.container {
+.container
   margin-left $defaultSpacer
-  perspective: $containerPerspective
-  perspective-origin: center $originPerspective
-}
+  perspective $containerPerspective
+  perspective-origin center $originPerspective
 
   //TODO: find better solution
-.container:before {
-  content: ''
-  display: inline-block
-  height: $defaultSpacer
-}
+.container:before
+  content ''
+  display inline-block
+  height $defaultSpacer
