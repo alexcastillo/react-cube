@@ -7,11 +7,11 @@ import * as CSS from 'utils/css';
 interface FaceProps {
     size: number,
     background: string,
-    type: string,
+    type: number,
+    key: string | number,
 }
 
-
-function getFacePosition(type: string, size: number): string {
+function getFacePosition(type: number, size: number): string {
     const halfSize = size / 2;
 
     switch(type) {
@@ -31,15 +31,15 @@ function getFacePosition(type: string, size: number): string {
 }
 
 const Face = (props: FaceProps) => {
-    const { size, background, type } = props;
+    const { size, background, type, key } = props;
     const style = {
+        background,
         width: size,
         height: size,
-        background,
         transform: getFacePosition(type, size)
     };
 
-    return <div className={`face ${type}`} style={style}/>
+    return <div key={key} className={`face ${type}`} style={style}/>
 };
 
 export default Face;

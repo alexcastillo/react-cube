@@ -16,7 +16,7 @@ const Cube = (props: CubeProps) => {
         <div className="cube">
             {
                 colours.map((colour, index) => {
-                    return <Face size={size} type={FaceTypes[index]} background={colour}/>;
+                    return <Face key={FaceTypes[index]} size={size} type={index} background={colour}/>;
                 })
             }
         </div>
