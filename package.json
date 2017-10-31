@@ -1,0 +1,33 @@
+{
+  "name": "react-cube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humanamburu/react-cube.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/humanamburu/react-cube/issues"
+  },
+  "homepage": "https://github.com/humanamburu/react-cube#readme",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.19",
+    "@types/react-dom": "^16.0.2",
+    "awesome-typescript-loader": "^3.2.3",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.5.3"
+  }
+}
