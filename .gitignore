@@ -1,14 +1,5 @@
-# Logs
 logs
-
-# Dependency directory
 node_modules
-
-# Optional npm cache directory
 .npm
-
-# Idea files
 .idea
-
-# Build
 dist
