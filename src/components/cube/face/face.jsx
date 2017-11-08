@@ -1,17 +1,8 @@
-import './face.css'
+import React from 'react';
+import { FaceTypes } from '../../../consts';
+import * as CSS from '../../../utils/css';
 
-import * as React from 'react';
-import { FaceTypes } from 'consts';
-import * as CSS from 'utils/css';
-
-interface FaceProps {
-    size: number,
-    background: string,
-    type: number,
-    key: string | number,
-}
-
-function getFacePosition(type: number, size: number): string {
+function getFacePosition(type, size) {
     const halfSize = size / 2;
 
     switch(type) {
@@ -30,13 +21,15 @@ function getFacePosition(type: number, size: number): string {
     }
 }
 
-const Face = (props: FaceProps) => {
+const Face = (props) => {
     const { size, background, type, key } = props;
     const style = {
         background,
         width: size,
         height: size,
-        transform: getFacePosition(type, size)
+        transform: getFacePosition(type, size),
+        display: 'inline-block',
+        position: 'absolute' as 'absolute',
     };
 
     return <div key={key} className={`face ${type}`} style={style}/>
