@@ -1,13 +1,13 @@
 {
   "name": "react-cube",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "./lib/src/index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "build": "babel ./src/**/**.jsx --out-dir ./lib"
+    "build": "babel ./src/**/**.* --out-dir ./lib"
   },
   "repository": {
     "type": "git",
