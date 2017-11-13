@@ -8,6 +8,9 @@ const Cube = (props) => {
     const facesOrder = [FaceTypes.front, FaceTypes.back, FaceTypes.top, FaceTypes.bottom, FaceTypes.left, FaceTypes.right];
     const style = {
         transformStyle: 'preserve-3d',
+        width: size,
+        height: size,
+        display: 'inline-block',
     };
 
     return (
