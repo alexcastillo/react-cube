@@ -18,3 +18,5 @@ ReactDOM.render(
 );
 
 ```
+
+![Cube](https://i.imgur.com/nltT18H.png)
