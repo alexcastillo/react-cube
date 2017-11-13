@@ -5,7 +5,7 @@ import * as CSS from '../../../utils/css';
 function getFacePosition(type, size) {
     const halfSize = size / 2;
 
-    switch(type) {
+    switch (type) {
         case FaceTypes.front:
             return CSS.translateZ(halfSize);
         case FaceTypes.back:
@@ -21,7 +21,7 @@ function getFacePosition(type, size) {
     }
 }
 
-const Face = (props) => {
+const Face = props => {
     const { size, background, type, key } = props;
     const style = {
         background,
@@ -29,10 +29,10 @@ const Face = (props) => {
         height: size,
         transform: getFacePosition(type, size),
         display: 'inline-block',
-        position: 'absolute',
+        position: 'absolute'
     };
 
-    return <div key={key} className={`face ${type}`} style={style}/>
+    return React.createElement('div', { key: key, className: `face ${type}`, style: style });
 };
 
 export default Face;
